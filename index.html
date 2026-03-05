@@ -23,9 +23,12 @@
     window.$docsify = {
       name: '宝宝护理知识库',
       repo: 'https://github.com/adminlove520/baby_care-0305',
-      loadSidebar: true,
+      loadSidebar: '_sidebar.md',
       subMaxLevel: 3,
       auto2top: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
       search: {
         maxAge: 86400000,
         paths: 'auto',
